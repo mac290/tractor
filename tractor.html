@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tractor Website</title>
+    <style>
+        body {
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+            background-image: url('tractor.jpg'); /* Replace with your image URL */
+            background-size: cover; /* Scale the image to cover the entire div */
+            height: 100vh; /* Make the div take up the full height of the viewport */
+            width: 100vw; /* Make the div take up the full width of the viewport */
+            background-attachment: fixed; /* Keep the background image fixed */
+            background-position: center; /* Center the background image */
+            animation: moveImage 10s infinite; /* Add an animation to the background image */
+        }
+        .content {
+            display: flex; /* Make the div a flex container */
+            flex-direction: column; /* Stack elements vertically */
+            justify-content: center; /* Center the content vertically */
+            align-items: center; /* Center the content horizontally */
+            height: 100vh; /* Make the div take up the full height of the viewport */
+            color: #fff; /* White text color */
+            text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a text shadow for readability */
+            position: relative; /* Position the content relatively */
+        }
+        h1 {
+            position: absolute; /* Position the h1 absolutely */
+            top: 0; /* Move the h1 to the top */
+            left: 50%; /* Center the h1 horizontally */
+            transform: translateX(-50%); /* Center the h1 horizontally */
+            margin: 0; /* Remove the margin */
+            padding: 20px; /* Add some padding to the h1 */
+            text-align: left; /* Align the text to the left */
+            text-shadow: 0 0 10px rgba(255, 255, 0, 1); /* Add a glow effect to the text */
+            animation: glow 2s infinite; /* Add an animation to the text */
+        }
+        p {
+            margin-top: 60px; /* Add some space between the h1 and the p */
+            margin-bottom: 20px; /* Add some space between the p and the next element */
+            text-align: left; /* Align the text to the left */
+            text-decoration: underline; /* Underline the text */
+        }
+        .center-link {
+            text-align: center; /* Center the link */
+            text-decoration: underline; /* Underline the text */
+        }
+        @keyframes moveImage {
+            0% {
+                background-position: 0% 0%;
+            }
+            100% {
+                background-position: 0% 100%;
+            }
+        }
+        @keyframes glow {
+            0% {
+                text-shadow: 0 0 10px rgba(255, 255, 0, 0.5);
+            }
+            50% {
+                text-shadow: 0 0 20px rgba(255, 255, 0, 1);
+            }
+            100% {
+                text-shadow: 0 0 10px rgba(255, 255, 0, 0.5);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Your ultimate resource for all things tractor-related.</h1>
+        <p style="font-size: large;">Explore our site to find news, reviews and information about tractors from around the world.</p>
+        <p class="center-link"><a href="https://it.wikipedia.org/wiki/Trattore_agricolo" style="text-decoration: none; color: #fff;">Learn more about tractors on Wikipedia</a></p>
+        <p>Learn more about New Holland Agriculture on Wikipedia: <a href="https://it.wikipedia.org/wiki/New_Holland_Agriculture" style="text-decoration: none; color: #fff;">https://it.wikipedia.org/wiki/New_Holland_Agriculture</a></p>
+    </div>
+</body>
+</html>
